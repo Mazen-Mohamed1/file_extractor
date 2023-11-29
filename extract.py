@@ -9,7 +9,7 @@ from zipfile import ZipFile
 sg.theme("DarkSlateBlue4")
 
 layout = [
-    [sg.Text("FILE PATH", size=(15,1)), sg.InputText(key="FILE PATH")],
+    [sg.Text("FILE PATH", size=(15,1)), sg.InputText(key="FILE PATH"), sg.FileBrowse(file_types=(("Zip Files", "*.zip"),))],
     [sg.Button('Extract'),sg.Exit()]
 ]
 
